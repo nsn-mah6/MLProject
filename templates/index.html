@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<title>Student Exam Predictor</title>
+	<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+	<main class="hero">
+		<div class="floating-bg">
+			<span class="circle c1"></span>
+			<span class="circle c2"></span>
+			<span class="circle c3"></span>
+		</div>
+
+		<div class="hero-content">
+			<h1 class="title">Student Exam Performance Predictor</h1>
+			<p class="subtitle">Quickly estimate student performance from basic inputs.</p>
+
+			<a class="btn btn-primary" href="/predictdata">Open Predictor</a>
+
+			<p class="small">Built with a simple ML model — enter student details to get a prediction.</p>
+		</div>
+	</main>
+
+	<script src="{{ url_for('static', filename='js/app.js') }}"></script>
+</body>
+</html>
